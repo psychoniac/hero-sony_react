@@ -13,7 +13,7 @@ const Navigation = () => {
       <a href="#" className="logo">
         <img src={Logo} alt="logo de l'app"/>
       </a>
-    <ul className="navigation">
+    <ul className={`navigation ${isActive ? 'active' : '' }`}>
     <li>
       <a href="#" className="active">Home</a>
     </li>
@@ -31,7 +31,7 @@ const Navigation = () => {
       <div className="icon-user">
         <ion-icon name="person"></ion-icon>
       </div>
-      <div id="burger-menu">
+      <div id="burger-menu" onClick={HandleBurgerClick}>
         <ion-icon name="menu-outline"></ion-icon>
       </div>
     </div>
