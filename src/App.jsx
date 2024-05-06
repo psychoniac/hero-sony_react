@@ -1,9 +1,10 @@
 import './App.css'
+import Navigation from './components/naviguation/Navigation'
 
 function App() {
    return (
     <>
-     <h1>Sony</h1>
+     <Navigation />
     </>
   )
 }
